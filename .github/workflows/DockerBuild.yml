@@ -10,5 +10,5 @@ jobs:
       - name: Build & Push Image
         run: |
           echo ${{ secrets.DOCKERTOKEN }} | docker login -u "svadha29" --password-stdin
-          docker build -t Svadha29/test_automation:latest .
-          docker push Svadha29/test_automation:latest
+          docker build -t svadha29/test_automation:latest .
+          docker push svadha29/test_automation:latest
